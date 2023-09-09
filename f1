@@ -1,0 +1,15 @@
+import random
+print('пароль для акаунтов')
+
+base = "abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890ඞ"
+
+size = int(input("размер пароля"))
+
+password = ""
+
+for i in range(size):
+    k = random.randint(0, len(base) -1)
+    print('...')
+    password += base[k]
+
+print(password)
